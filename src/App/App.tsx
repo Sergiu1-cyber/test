@@ -1,8 +1,11 @@
+import Header from "../components/header/Header"
+import Input from "../components/input/Input"
 
 const App = () => {
 	return(
 		<>
-		  <h1>App React</h1>	
+      <Header />
+		  <Input />
 		</>
 	)
 }
