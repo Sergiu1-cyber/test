@@ -12,7 +12,7 @@ export default function ListRender({list, removeItem}: IProps) {
 
   return (
     <div className="flex flex-col">
-      {list.length && RenderList}
+      {list && RenderList}
     </div>
   )
 }
