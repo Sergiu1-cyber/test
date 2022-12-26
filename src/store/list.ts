@@ -14,5 +14,11 @@ export function List() {
     setList([...list, item])
   }
 
-  return {list, AddItem}
+  function RemoveItem(id: number) {
+    setList(
+      list.filter(item => item.id !== id)
+    )
+  }
+
+  return {list, AddItem, RemoveItem}
 }

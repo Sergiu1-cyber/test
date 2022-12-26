@@ -1,10 +1,24 @@
+import {Functions} from "./Functions"
 
-export default function Input() {
+interface IProps {
+  addItem: (title: string) => void
+}
+
+export default function Input({addItem}: IProps) {
+
+  const {inputBynd, Save} = Functions({addItem})
+
   return (
     <div>
-      <h1>Input</h1>
-      <input type='text' />
-      <button>save</button>
+      <input 
+        {...inputBynd}
+        type='text' 
+      />
+      <button 
+        onClick={() => Save()}
+      >
+        save
+      </button>
     </div>
   )
 }
