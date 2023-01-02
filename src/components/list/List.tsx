@@ -11,7 +11,7 @@ export default function ListRender({list, removeItem}: IProps) {
   const RenderList = list.map( I => <Item item={I} Remove={removeItem} key={I.id}/> )
 
   return (
-    <div className="flex flex-col">
+    <div className="">
       {list && RenderList}
     </div>
   )

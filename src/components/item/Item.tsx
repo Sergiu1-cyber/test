@@ -7,7 +7,7 @@ interface IProps {
 
 export default function Item({item, Remove}: IProps) {
   return (
-    <div className="flex justify-between">
+    <div className="">
       <h1>{item.title}</h1>
       <button onClick={() => Remove(item.id)}>x</button>
     </div>
