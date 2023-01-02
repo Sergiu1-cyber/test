@@ -1,4 +1,5 @@
 import {IList} from "../../types/list"
+import classes from "./Item.module.css"
 
 interface IProps {
   item: IList
@@ -7,9 +8,9 @@ interface IProps {
 
 export default function Item({item, Remove}: IProps) {
   return (
-    <div className="">
+    <div className={classes.listContainer}>     
       <h1>{item.title}</h1>
-      <button onClick={() => Remove(item.id)}>x</button>
+      <button className={classes.listBtn} onClick={() => Remove(item.id)}>x</button>
     </div>
   )
 }
