@@ -10,6 +10,7 @@ export default function Input({addItem}: IProps) {
 
   return (
     <div>
+    	<h3>test</h3>
       <input 
         {...inputBynd}
         type='text' 
